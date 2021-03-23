@@ -1,12 +1,24 @@
 # algolia_test
 
-A new Flutter application.
+A simple Flutter application that demonstrates how Algolia can be integrated and used for advanced searching.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Create a free account on [Algolia](https://www.algolia.com/)
 
-A few resources to get you started if this is your first Flutter project:
+Create an index called 'users' in Algolia
+
+Copy the Application Id and Search-only API Key from Algolia > API Keys
+and paste them in
+lib > services > algolia.dart
+
+Write & deploy your own cloud functions to sync your Firestore data with Algolia
+i.e. when your desired data is updated in Firestore, these updates should be reflected in Algolia too.
+
+You can also use Providers or any other state management techniques.
+This project uses the simple setState to make the code easier to understand for everyone, including developers who are just starting with Flutter.
+
+
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
